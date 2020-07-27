@@ -65,6 +65,13 @@ def getstudymotiv(update, context):
     update.message.reply_text(quotes[randomIndex])
 
 
+def getislamicmotiv(update, context):
+    quotes = ["Not implemented exception"]
+    length = len(quotes)
+    randomIndex = random.randint(0, length - 1)
+    update.message.reply_text(quotes[randomIndex])
+
+
 def main():
     # Create the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
@@ -78,6 +85,7 @@ def main():
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(CommandHandler("getstudymotiv", getstudymotiv))
+    dp.add_handler(CommandHandler("getislamicmotiv", getislamicmotiv))
 
     # on noncommand i.e message - echo the message on Telegram
     # dp.add_handler(MessageHandler(Filters.text, echo))

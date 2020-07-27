@@ -71,7 +71,7 @@ def main():
     # on different commands - answer in Telegram
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
-    dp.add_handler(CommandHandler("getrandomitem", getstudymotiv))
+    dp.add_handler(CommandHandler("getstudymotiv", getstudymotiv))
 
     # on noncommand i.e message - echo the message on Telegram
     # dp.add_handler(MessageHandler(Filters.text, echo))

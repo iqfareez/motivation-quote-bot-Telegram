@@ -66,7 +66,13 @@ def getstudymotiv(update, context):
 
 
 def getislamicmotiv(update, context):
-    quotes = ["Not implemented exception"]
+    quotes = ["“If Allah wants to do good to somebody, he afflicts him with trials.” – Sahih Al Bukhari",
+              "Doctors can treat you, but only ALLAH can heal you",
+              "Allah is enough",
+              "When things are too hard to handle, retreat & count your blessings instead.",
+              "Allah’s timing is perfect in every matter. We don’t always understand the wisdom behind it. But we have to learn to trust it.",
+              "Allah knows what is the best for you and when it’s best for you to have it.",
+              "No matter what your physical appearance, when you have kindness in your heart, You’re the most beautiful person in the world. – Mufti Ismail Menk"]
     length = len(quotes)
     randomIndex = random.randint(0, length - 1)
     update.message.reply_text(quotes[randomIndex])

@@ -29,6 +29,7 @@ def error(update, context):
 
 def help(update, context):
     message = "View list of available commands by typing slash character into the chat"
+    update.message.reply_text(message)
 
 
 def getstudymotiv(update, context):

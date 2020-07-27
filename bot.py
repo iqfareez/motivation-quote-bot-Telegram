@@ -27,6 +27,10 @@ def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
 
 
+def help(update, context):
+    message = "View list of available commands by typing slash character into the chat"
+
+
 def getstudymotiv(update, context):
     # content by https://www.daniel-wong.com/2015/10/05/study-motivation-quotes/
     quotes = ["Believe you can and you’re halfway there.", "You have to expect things of yourself before you can do them.",
@@ -56,8 +60,7 @@ def getstudymotiv(update, context):
               "It’s not going to be easy, but it’s going to be worth it."]
     length = len(quotes)
     randomIndex = random.randint(0, length - 1)
-    update.message.reply_text(
-        '******************\n{}\n\n******************'.format(quotes[randomIndex]))
+    update.message.reply_text(quotes[randomIndex])
 
 
 def main():

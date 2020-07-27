@@ -57,7 +57,7 @@ def getstudymotiv(update, context):
     length = len(quotes)
     randomIndex = random.randint(0, length - 1)
     update.message.reply_text(
-        '*************\n{}\n**************'.format(quotes[randomIndex]))
+        '******************\n{}\n\n******************'.format(quotes[randomIndex]))
 
 
 def main():

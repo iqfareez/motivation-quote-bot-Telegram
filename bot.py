@@ -2,6 +2,7 @@ import logging
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import os
 import random
+from CONSTANTS import *
 
 """ forked from liuhh02 https://medium.com/@liuhh02 """
 
@@ -12,7 +13,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                     level=logging.INFO)
 
 logger = logging.getLogger(__name__)
-TOKEN = '1365980209:AAHHUmELDDX0edMJiEpcIqNl2tCDCbwuK9s'
+TOKEN = TELEGRAM_BOT_TOKEN
 
 # Define a few command handlers. These usually take the two arguments update and
 # context. Error handlers also receive the raised TelegramError object in error.
@@ -89,7 +90,7 @@ def main():
                           port=int(PORT),
                           url_path=TOKEN)
     updater.bot.setWebhook(
-        'https://whispering-harbor-88116.herokuapp.com/' + TOKEN)
+        HEROKU_APP_LINK + TOKEN)
 
     # Run the bot until you press Ctrl-C or the process receives SIGINT,
     # SIGTERM or SIGABRT. This should be used most of the time, since

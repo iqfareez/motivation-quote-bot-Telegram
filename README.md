@@ -19,6 +19,11 @@ Here's the [link](http://t.me/motivate_us_bot)
 
 https://youtu.be/laHspJzlpDQ
 
+### Honourable mentions
+
+Credit to this page https://towardsdatascience.com/how-to-deploy-a-telegram-bot-using-heroku-for-free-9436f89575d2 for tutorial on deploying to Heroku
+... and of course stack overflow hahaha
+
 ### Command line:
 
 `git push heroku master`

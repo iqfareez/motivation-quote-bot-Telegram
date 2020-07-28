@@ -21,7 +21,7 @@ TOKEN = TELEGRAM_BOT_TOKEN
 
 def start(update, context):
     name = update.message.from_user
-    update.message.reply_text('Hi {}'.format(name['username']))
+    update.message.reply_text('Hi {} <3'.format(name['username']))
 
 
 def error(update, context):

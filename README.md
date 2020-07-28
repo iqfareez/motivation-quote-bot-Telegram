@@ -5,7 +5,7 @@ Here's the [link](http://t.me/motivate_us_bot)
 
 ## Hi. Goodluck! :wink:
 
-Alhamdulillah ramai sukaaa T_T
+Alhamdulillah ramai sukaaa T_T. Ni yg terharu ni thanks my friendsss.
 
 ## How to start?
 

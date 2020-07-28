@@ -53,6 +53,7 @@ def getstudymotiv(update, context):
               "You don’t always get what you wish for; you get what you work for.", "It’s not about how bad you want it. It’s about how hard you’re willing to work for it.",
               "The only place where success comes before work is in the dictionary. – Vidal Sassoon", "There are no traffic jams on the extra mile. – Zig Ziglar",
               "If people only knew how hard I’ve worked to gain my mastery, it wouldn’t seem so wonderful at all. – Michelangelo",
+              "“All our dreams can come true, if we have the courage to pursue them.” – Walt Disney.",
               "If it’s important to you, you’ll find a way. If not, you’ll find an excuse.", "Don’t say you don’t have enough time. You have exactly the same number of hours per day that were given to Helen Keller, Pasteur, Michelangelo, Mother Teresea, Leonardo da Vinci, Thomas Jefferson, and Albert Einstein. – H. Jackson Brown Jr.",
               "Challenges are what make life interesting. Overcoming them is what makes life meaningful. – Joshua J. Marine",
               "Life has two rules: 1) Never quit. 2) Always remember Rule #1.", "I’ve failed over and over and over again in my life. And that is why I succeed. – Michael Jordan",
@@ -61,6 +62,7 @@ def getstudymotiv(update, context):
               "Failure is the opportunity to begin again more intelligently. – Henry Ford",
               "You don’t drown by falling in the water; you drown by staying there. – Ed Cole", "The difference between a stumbling block and a stepping-stone is how high you raise your foot.",
               "The pain you feel today is the strength you will feel tomorrow. For every challenge encountered there is opportunity for growth.",
+              "“Be like a diamond, precious and rare, not like a stone, found everywhere.” Anonymous",
               "It’s not going to be easy, but it’s going to be worth it."]
     length = len(quotes)
     randomIndex = random.randint(0, length - 1)
@@ -74,7 +76,12 @@ def getislamicmotiv(update, context):
               "When things are too hard to handle, retreat & count your blessings instead.",
               "Allah’s timing is perfect in every matter. We don’t always understand the wisdom behind it. But we have to learn to trust it.",
               "Allah knows what is the best for you and when it’s best for you to have it.",
-              "No matter what your physical appearance, when you have kindness in your heart, You’re the most beautiful person in the world. – Mufti Ismail Menk"]
+              "No matter what your physical appearance, when you have kindness in your heart, You’re the most beautiful person in the world. – Mufti Ismail Menk",
+              "“Do not lose hope, nor be sad.” Quran 3:139",
+              "“Call upon Me, I will respond to you.” Quran 40:60"
+              "“Never underestimate the power of Dua (supplication).” Anonymous",
+              "“Allah (God) does not burden a soul beyond that it can bear.” Quran 2:286",
+              "“They plan, and Allah (God) plans. Surely, Allah (God) is the best of planners.” Quran 8:30"]
     length = len(quotes)
     randomIndex = random.randint(0, length - 1)
     update.message.reply_text(quotes[randomIndex])

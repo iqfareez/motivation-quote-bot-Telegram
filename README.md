@@ -7,7 +7,8 @@ Here's the [link](http://t.me/motivate_us_bot)
 
 ## How to start?
 
-1. Type '\help' and send.
+1. Type `\start` and send **or**
+2. Tap on **START** button
 
 ### Sources
 

@@ -5,6 +5,8 @@ Here's the [link](http://t.me/motivate_us_bot)
 
 ## Hi. Goodluck! :wink:
 
+Alhamdulillah ramai sukaaa T_T
+
 ## How to start?
 
 1. Type `\start` and send **or**

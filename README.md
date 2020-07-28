@@ -26,6 +26,10 @@ https://youtu.be/laHspJzlpDQ
 Credit to this page https://towardsdatascience.com/how-to-deploy-a-telegram-bot-using-heroku-for-free-9436f89575d2 for tutorial on deploying to Heroku
 ... and of course stack overflow hahaha
 
+### Feel free to fork or clone this repo
+
+And make sure you change your heroku url and Telegram token in CONSTANT.py
+
 ### Command line:
 
 `git push heroku master`

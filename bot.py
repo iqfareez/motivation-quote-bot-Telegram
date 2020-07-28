@@ -78,7 +78,7 @@ def getislamicmotiv(update, context):
               "Allah knows what is the best for you and when it’s best for you to have it.",
               "No matter what your physical appearance, when you have kindness in your heart, You’re the most beautiful person in the world. – Mufti Ismail Menk",
               "“Do not lose hope, nor be sad.” Quran 3:139",
-              "“Call upon Me, I will respond to you.” Quran 40:60"
+              "“Call upon Me, I will respond to you.” Quran 40:60",
               "“Never underestimate the power of Dua (supplication).” Anonymous",
               "“Allah (God) does not burden a soul beyond that it can bear.” Quran 2:286",
               "“They plan, and Allah (God) plans. Surely, Allah (God) is the best of planners.” Quran 8:30"]

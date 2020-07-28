@@ -29,9 +29,9 @@ def error(update, context):
 
 
 def help(update, context):
-    message = """View list of available commands by typing slash character into the chat\n
-    \nOr view source code at Sourcecode: https://github.com/fareezMaple/motivation-quote-bot-Telegram (leave a STAR ok)
-    Watch this bot speedcoding: https://youtu.be/laHspJzlpDQ"""
+    message = """View list of available commands by typing slash character into the chat
+    \nOr view source code at Sourcecode: https://github.com/fareezMaple/motivation-quote-bot-Telegram (leave a STAR ok)\n
+    and also watch this bot speedcoding: https://youtu.be/laHspJzlpDQ"""
     update.message.reply_text(message)
 
 

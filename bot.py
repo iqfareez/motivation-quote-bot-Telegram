@@ -12,7 +12,9 @@ logging.basicConfig(
     level=logging.INFO)
 
 logger = logging.getLogger(__name__)
-BOT_TOKEN = os.environ['TELE_BOT_TOKEN']
+
+HEROKU_URL = 'https://motivate-us-bot.herokuapp.com/'
+BOT_TOKEN = os.environ['TELE_BOT_TOKEN']  # token generated from botfather
 
 # Define a few command handlers. These usually take the two arguments update and
 # context. Error handlers also receive the raised TelegramError object in error.
@@ -29,7 +31,7 @@ def error(update, context):
 
 def help(update, context):
     message = """View list of available commands by typing slash character into the chat
-    \nOr view source code at Sourcecode: https://github.com/fareezMaple/motivation-quote-bot-Telegram (leave a STAR ok)
+    \nOr view source code at Sourcecode: https://github.com/iqfareez/motivation-quote-bot-Telegram (leave a STAR ok)
     \nand also watch this bot speedcoding: https://youtu.be/laHspJzlpDQ"""
     update.message.reply_text(message)
 
@@ -84,7 +86,11 @@ def getstudymotiv(update, context):
         "The difference between a stumbling block and a stepping-stone is how high you raise your foot.",
         "The pain you feel today is the strength you will feel tomorrow. For every challenge encountered there is opportunity for growth.",
         "“Be like a diamond, precious and rare, not like a stone, found everywhere.” Anonymous",
-        "It’s not going to be easy, but it’s going to be worth it."
+        "It’s not going to be easy, but it’s going to be worth it.",
+        "Believe you can and you’re halfway there.",
+        "Strive for progress, not perfection.",
+        "Push yourself, because no one else is going to do it for you.",
+        "You don’t always get what you wish for; you get what you work for."
     ]
     length = len(quotes)
     randomIndex = random.randint(0, length - 1)
@@ -104,7 +110,9 @@ def getislamicmotiv(update, context):
         "“Call upon Me, I will respond to you.” Quran 40:60",
         "“Never underestimate the power of Dua (supplication).” Anonymous",
         "“Allah (God) does not burden a soul beyond that it can bear.” Quran 2:286",
-        "“They plan, and Allah (God) plans. Surely, Allah (God) is the best of planners.” Quran 8:30"
+        "“They plan, and Allah (God) plans. Surely, Allah (God) is the best of planners.” Quran 8:30",
+        '“Allah does not burden a soul beyond that it can bear.” [Quran 2:286]'
+        '“For indeed, with hardship [will be] ease.” [Quran 94:5].',
     ]
     length = len(quotes)
     randomIndex = random.randint(0, length - 1)
@@ -134,8 +142,7 @@ def main():
 
     # Start the Bot
     updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path=BOT_TOKEN)
-    updater.bot.setWebhook('https://motivate-us-bot.herokuapp.com/' +
-                           BOT_TOKEN)
+    updater.bot.setWebhook(HEROKU_URL + BOT_TOKEN)
 
     # Run the bot until you press Ctrl-C or the process receives SIGINT,
     # SIGTERM or SIGABRT. This should be used most of the time, since

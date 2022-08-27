@@ -13,7 +13,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-HEROKU_URL = 'https://motivate-us-bot.herokuapp.com/'
+SERVER_URL = 'https://motivationbot.up.railway.app/'
 BOT_TOKEN = os.environ['TELE_BOT_TOKEN']  # token generated from botfather
 
 # Define a few command handlers. These usually take the two arguments update and
@@ -142,7 +142,7 @@ def main():
 
     # Start the Bot
     updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path=BOT_TOKEN)
-    updater.bot.setWebhook(HEROKU_URL + BOT_TOKEN)
+    updater.bot.setWebhook(SERVER_URL + BOT_TOKEN)
 
     # Run the bot until you press Ctrl-C or the process receives SIGINT,
     # SIGTERM or SIGABRT. This should be used most of the time, since

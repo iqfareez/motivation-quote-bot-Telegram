@@ -51,7 +51,6 @@ Follow these steps to run the bot locally on your machine:
    ```
 
    To get a bot token:
-
    - Message [@BotFather](https://t.me/BotFather) on Telegram
    - Create a new bot with `/newbot`
    - Copy the token provided
@@ -74,8 +73,7 @@ The bot will start running in polling mode and respond to commands in your Teleg
 
 For deployment instructions, see:
 
-- [Heroku Deployment](docs/deployment/Heroku.md)
-- [VPS Cloudpanel Deployment](docs/deployment/VPS-Cloudpanel.md)
+- [Heroku Deployment (Outdated)](docs/deployment/Heroku.md)
 
 ### Sources
 

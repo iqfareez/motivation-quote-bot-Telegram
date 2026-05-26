@@ -87,8 +87,3 @@ For deployment instructions, see:
 ### Watch speedcoding on YouTube!
 
 https://youtu.be/laHspJzlpDQ
-
-### Honourable mentions
-
-Credit to this page https://towardsdatascience.com/how-to-deploy-a-telegram-bot-using-heroku-for-free-9436f89575d2 for tutorial on deploying to Heroku
-... and of course StackOverflow hahaha

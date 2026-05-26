@@ -1,0 +1,6 @@
+services:
+  motivationquotebottelegram:
+    image: motivationquotebottelegram
+    build:
+      context: .
+      dockerfile: ./Dockerfile

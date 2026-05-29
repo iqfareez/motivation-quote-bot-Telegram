@@ -1,16 +1,14 @@
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](http://t.me/motivate_us_bot)
+<img width="5806" height="3870" alt="repo cover photo screenshot telegram" src="https://github.com/user-attachments/assets/c9060005-97e3-46da-b620-69075dcdfa91" />
+
+[![Telegram](https://img.shields.io/badge/%40motivate_us_bot-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](http://t.me/motivate_us_bot)
 
 # Motivation Quote Bot for Telegram
 
-Try now: http://t.me/motivate_us_bot
-
-- Send `/start` **or**
-- Tap on **START** button
+A Telegram bot for getting motivation, including Islamic motivational reminders. Originally built in lieu of my upcoming final exams back during my university days.
 
 ## Getting Started
 
-Follow these steps to run the bot locally on your machine:
+Follow these steps to run the bot locally on your machine. You can choose the [conventional](#using-python) way or [Docker](#using-docker) way.
 
 ### Using Python
 

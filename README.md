@@ -54,7 +54,7 @@ You'll need Python 3.7 or higher installed on your system.
 
 ### Using Docker
 
-More simpler approach to quickly run the bot is using [Docker](https://www.docker.com/). Make sure you have Docker installed on your system.
+A simpler approach to quickly run the bot is using [Docker](https://www.docker.com/). Make sure you have Docker installed on your system.
 
 1. Create a `.env` file in the project root and add your bot token:
 
@@ -70,7 +70,7 @@ More simpler approach to quickly run the bot is using [Docker](https://www.docke
 
 Either way, the bot will start running in polling mode and respond to commands in your Telegram chat.
 
-## Usages
+## Usage
 
 - `/start` - Start the bot
 - `/help` - Show help message

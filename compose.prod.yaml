@@ -1,0 +1,8 @@
+services:
+  motivationquotebottelegram:
+    image: ghcr.io/iqfareez/motivationquotebottelegram:master
+    environment:
+      TELE_BOT_TOKEN: ${TELE_BOT_TOKEN}
+      USE_WEBHOOK: ${USE_WEBHOOK}
+      WEBHOOK_URL: ${WEBHOOK_URL}
+      PORT: ${PORT}

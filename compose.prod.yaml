@@ -1,5 +1,6 @@
 services:
-  motivationquotebottelegram:
-    image: ghcr.io/iqfareez/motivationquotebottelegram:master
+  motivation-quote-bot-telegram:
+    image: ghcr.io/iqfareez/motivation-quote-bot-telegram:master
+    restart: unless-stopped
     environment:
       TELE_BOT_TOKEN: ${TELE_BOT_TOKEN}

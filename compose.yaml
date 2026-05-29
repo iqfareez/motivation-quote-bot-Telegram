@@ -1,6 +1,6 @@
 services:
-  motivationquotebottelegram:
-    image: motivationquotebottelegram
+  motivation-quote-bot-telegram:
+    image: motivation-quote-bot-telegram
     build:
       context: .
       dockerfile: ./Dockerfile

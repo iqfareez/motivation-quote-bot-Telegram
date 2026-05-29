@@ -8,7 +8,7 @@ A Telegram bot for getting motivation, including Islamic motivational reminders.
 
 ## Getting Started
 
-Follow these steps to run the bot locally on your machine. You can choose the [conventional](#using-python) way or [Docker](#using-docker) way.
+Follow these steps to run the bot locally on your machine. You can choose to follow the [conventional](#using-python) way or the [Docker](#using-docker) way.
 
 ### Using Python
 

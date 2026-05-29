@@ -1,28 +1,23 @@
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](http://t.me/motivate_us_bot)
+<img width="5806" height="3870" alt="repo cover photo screenshot telegram" src="https://github.com/user-attachments/assets/c9060005-97e3-46da-b620-69075dcdfa91" />
+
+[![Telegram](https://img.shields.io/badge/%40motivate_us_bot-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](http://t.me/motivate_us_bot)
 
 # Motivation Quote Bot for Telegram
 
-Try now: http://t.me/motivate_us_bot
-
-- Send `/start` **or**
-- Tap on **START** button
+A Telegram bot for getting motivation, including Islamic motivational reminders. Originally built in lieu of my upcoming final exams back during my university days.
 
 ## Getting Started
 
-Follow these steps to run the bot locally on your machine:
+Follow these steps to run the bot locally on your machine. You can choose to follow the [conventional](#using-python) way or the [Docker](#using-docker) way.
 
-### Prerequisites
+### Using Python
 
-- Python 3.7 or higher
-- Git
-
-### Setup Instructions
+You'll need Python 3.7 or higher installed on your system.
 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/motivation-quote-bot-Telegram.git
+   git clone https://github.com/iqfareez/motivation-quote-bot-Telegram
    cd motivation-quote-bot-Telegram
    ```
 
@@ -50,19 +45,32 @@ Follow these steps to run the bot locally on your machine:
    TELE_BOT_TOKEN=your_telegram_bot_token_here
    ```
 
-   To get a bot token:
-   - Message [@BotFather](https://t.me/BotFather) on Telegram
-   - Create a new bot with `/newbot`
-   - Copy the token provided
+   To have a bot token, you need to have a bot on Telegram. You can create one using [BotFather](https://t.me/BotFather) on Telegram.
 
 5. **Run the bot**
    ```bash
    python bot.py
    ```
 
-The bot will start running in polling mode and respond to commands in your Telegram chat.
+### Using Docker
 
-### Available Commands
+A simpler approach to quickly run the bot is using [Docker](https://www.docker.com/). Make sure you have Docker installed on your system.
+
+1. Create a `.env` file in the project root and add your bot token:
+
+   ```
+   TELE_BOT_TOKEN=your_telegram_bot_token_here
+   ```
+
+2. Run the command below to start the bot using Docker Compose:
+
+   ```bash
+   docker compose -f compose.yaml up --build
+   ```
+
+Either way, the bot will start running in polling mode and respond to commands in your Telegram chat.
+
+## Usage
 
 - `/start` - Start the bot
 - `/help` - Show help message
@@ -71,11 +79,11 @@ The bot will start running in polling mode and respond to commands in your Teleg
 
 ## Deployment
 
-For deployment instructions, see:
+You can use [`compose.prod.yml`](compose.prod.yml) to deploy the bot using Docker Compose in production. Make sure to set the `TELE_BOT_TOKEN` environment variable in your deployment environment.
 
-- [Heroku Deployment (Outdated)](docs/deployment/Heroku.md)
+See [packages](https://github.com/users/iqfareez/packages/container/package/motivation-quote-bot-telegram) for more details.
 
-### Sources
+## Quotes Sources
 
 1. https://technobb.com/100-inspirational-islamic-quotes-with-beautiful-images/
 2. https://www.daniel-wong.com/2015/10/05/study-motivation-quotes/

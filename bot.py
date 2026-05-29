@@ -9,8 +9,6 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 # Load environment variables from .env file
 load_dotenv()
 
-PORT = int(os.environ.get('PORT', 5000))
-SERVER_URL = os.environ.get('SERVER_URL', 'https://motivationbot.up.railway.app/')
 BOT_TOKEN = os.environ['TELE_BOT_TOKEN']
 
 # Enable logging
@@ -69,16 +67,7 @@ def main():
     application.add_handler(CommandHandler("getislamicmotiv", getislamicmotiv))
     application.add_error_handler(error_handler)
 
-    # Start the bot with webhook
-    # application.run_webhook(
-    #     listen="0.0.0.0",
-    #     port=PORT,
-    #     url_path=BOT_TOKEN,
-    #     webhook_url=f"{SERVER_URL}{BOT_TOKEN}"
-    # )
-
     application.run_polling(allowed_updates=Update.ALL_TYPES)
-
 
 if __name__ == "__main__":
     main()

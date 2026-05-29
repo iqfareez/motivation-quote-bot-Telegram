@@ -17,8 +17,8 @@
    - **VALUE**: _paste your Telegram bot token_
 8. Click on <kbd>Open App</kbd> (located at upper right corner). Then, **copy** the link. It will look something like `https://my-tele-bot-200.herokuapp.com/`
 9. Now, **fork** and **clone** this repo into your local machine.
-10. Open `bot.py` file. You'll need to replace value in `SERVER_URL` and `BOT_TOKEN`.
-    - **SERVER_URL**: _Paste the link you've copied in step 8_
+10. Open `bot.py` file. You'll need to replace value in `WEBHOOK_URL` and `BOT_TOKEN`.
+    - **WEBHOOK_URL**: _Paste the link you've copied in step 8_
     - **BOT_TOKEN**: Replace value inside [''] with your config vars, it will looks like `os.environ['MY_BOT_TOKEN']`
 
 Now, we are good to go to deploy to the Heroku, there are generally two ways to deploy it, by using **Heroku CLI** or **GitHub**. You can use whatever you like but I'm going to use the latter.

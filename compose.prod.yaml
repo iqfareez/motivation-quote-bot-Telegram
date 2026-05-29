@@ -1,0 +1,5 @@
+services:
+  motivationquotebottelegram:
+    image: ghcr.io/iqfareez/motivationquotebottelegram:master
+    environment:
+      TELE_BOT_TOKEN: ${TELE_BOT_TOKEN}
